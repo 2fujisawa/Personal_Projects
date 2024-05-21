@@ -23,7 +23,7 @@ int main()
     }
 
     cout << endl;
-
+    
 //placing a specific value into wherever in the vector
 
 v2.emplace(v2.begin() + 3, "example" );//keyword "emplace inserts the value into wherever you need to in the vector"

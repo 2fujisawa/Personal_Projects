@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//Arrays : DATA STRUCTURE: Allows us to store multiple values
+//Arrays : DATA STRUCTURE: Allows us to store multiple values we will learn this soon
 int main()
 {
     //Arrays have elements and are all gonna be same data type, size of array cannot be changed once made would have to make a new one
