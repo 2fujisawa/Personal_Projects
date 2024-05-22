@@ -7,8 +7,8 @@
 
 using namespace std; 
 
-void Log(const char* message);
-int add(int a, int b);
+int add(int a, int b); //same goes here same to the top function. Makes code easier to read
+void Log(const char* message); // We don't actually need this function call here since we already called it in the header file. But if we didn't include the header file this would be necessary
 
 int main() //entry point 
 {
