@@ -37,10 +37,7 @@ int main() //entry point
     reference = 10; // Sets exampleref's equal to the reference and allows it to modify both of them
 
     cout << reference <<endl;
-
-
     Increment(&exampleref);//increments the address at the variable address
-
 
 
     //we use memory allocation on the heap since we have manual control over when to delete the memory instead of instantly deleting it after a function ends
