@@ -33,7 +33,7 @@ int main() //entry point
 
 //Reference - we use int& at the data type which 
     int exampleref = 1;
-    int& reference = exampleref; //alias
+    int& reference = exampleref; //alias since the & is on the data type the variable reference is going to be a references
     reference = 10; // Sets exampleref's equal to the reference and allows it to modify both of them
 
     cout << reference <<endl;
