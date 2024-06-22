@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Class alternative
 struct Node
 {
     Node* left;
@@ -15,7 +16,8 @@ Node *createNode(int data)
 {
     Node *newNode = new Node();
     newNode -> data = data;
-    newNode -> left = newNode -> right = nullptr;
+    newNode -> left = nullptr;
+    newNode -> right = nullptr;
     return newNode;
 }
 
@@ -26,7 +28,7 @@ void preorder(Node* root)
     {
         return;
     }
-    cout << root -> data << endl;
+    cout << root -> data << " ";
     preorder(root->left);
     preorder(root->right);
 }
@@ -39,10 +41,20 @@ void inordertree(Node* root)
         return;
     }
     inordertree(root->left);
-    cout << root -> data << endl;
+    cout << root -> data << " ";
     inordertree(root->right);
 }
 
+void postordertree(Node* root)
+{
+    if(root == NULL)
+    {
+        return;
+    }
+    inordertree(root->left);
+    inordertree(root->right);
+    cout << root -> data << " ";
+}
 
 int main()
 {
@@ -53,12 +65,18 @@ int main()
     root -> left -> left = createNode(4);
     root -> left -> right = createNode(5);
 
+    cout << "The preorder traversal is: ";
     preorder(root);
+    cout << "\nThe inorder traversal is: ";
     inordertree(root);
+    cout << "\nThe postorder traversal is: ";
+    postordertree(root);
+
 }
 
 //Tree Traversal Algorithms
-//BFS and DFS - Preorder, Inorder, Postorder
+//DFS - Preorder, Inorder, Postorder BFS and 
 //We are using tree traversal to access in the nodes
-// BFS Iterates through the Width(Horizontally) of tree one by one 
 //DFS Iterates through the depth(Vertically) of tree one by one
+//BFS Iterates through the Width(Horizontally) of tree one by one 
+
