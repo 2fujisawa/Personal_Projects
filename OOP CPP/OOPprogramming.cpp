@@ -10,7 +10,6 @@ using namespace std;
 class Employee:abstraction //we have to define the abstracted class here as it was virtually voided
                             //This also means that the Employee class has a contract with the class abstraction
 {
-
     private: //access modifier
         int Age;
         char Gender;
