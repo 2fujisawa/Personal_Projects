@@ -1,0 +1,30 @@
+There are 4 fundamental concepts when it comes to programming code that is Object Oriented Programming(OOP)
+
+- Example OOP languages: Python, C++, Ruby, Java, PHP, JavaScript, TypeScript, Go
+
+Object: Anything you want to store and process data about, anyting from the real world
+Entity: 
+
+1. Abstraction : Simplifiying reality, relevant data you want to use in your program.
+To create a object you need to first create a class(template of a object) which contains 
+    - Attributes/Properties and Operations/Methods
+
+Creating an object from a class is called instantiation and each object of the same class type can be created as a unique entity
+
+(Its also possible to assign values to properties while the object is being instantiated by using the new keyword) This method is called the constructor variable = new class("Assigned values)")
+
+ 
+2. Encapsulation : Hiding Data and Complexity(Information Hiding)
+Data and Operations are safe when moving
+
+3. Inheritance: A class can derive(obtain) its methods and properties from another class and extend it
+Ex. (Base Class)/(Superclass) Person - Properties(name, age, gender, fast) <- (subclass)Employee - Properties(Person, position) <- (subclass)Programmer(Employee, programming language)
+
+
+4. Polymorphism:  A class can implement an inhertited method in its own way
+
+When creating a base class or superclass you create a specifc method that is copied into the subclasses, however there are times you would want to change the method for certain 
+subclasses, Polymorphism is basically the term described to adjust the method that was copied from the superclass
+
+
+
